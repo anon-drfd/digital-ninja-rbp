@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title> Digital Ninja: Dashboard!</title>
+  </head>
+  
+  <body>
+    <h1> Humidity & Temperature Readings </h1>    
+      <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1118462/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+	  <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1118462/widgets/214511"></iframe>
+
+    <h1> LED Status (0: OFF/ 1: ON) </h1>  
+      <h3> Green LED is: <b> {{stsLedGr}}  </b> </h3>
+      <h3> Red LED is: <b> {{stsLedRed}} </b> </h3>  
+      
+    <h1> LED Control </h1>    
+      <h3> Red LED </h3>
+        <a href = "/buttonRed/on" class = "button"> ON </a> 
+        <a href = "/buttonRed/off" class = "button"> OFF </a> 
+
+      <h3> Green LED </h3>
+        <a href = "/buttonGr/on" class = "button"> ON </a> 
+        <a href = "/buttonGr/off" class = "button"> OFF </a> 
+
+  </body>
+</html>
